@@ -29,9 +29,9 @@
   @font-face {
     font-family: 'RF Tone';
     src: local('RF Tone ExtraBold'), local('RF-Tone-ExtraBold'),
-        url('RFTone-ExtraBold.woff2') format('woff2'),
-        url('RFTone-ExtraBold.woff') format('woff'),
-        url('RFTone-ExtraBold.ttf') format('truetype');
+        url('../fonts/RFTone-ExtraBold.woff2') format('woff2'),
+        url('../fonts/RFTone-ExtraBold.woff') format('woff'),
+        url('../fonts/RFTone-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
   }

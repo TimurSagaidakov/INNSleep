@@ -21,12 +21,76 @@
 
 @font-face {
   font-family: 'RF Tone';
-  src: local("RF Tone ExtraBold"), local("RF-Tone-ExtraBold"), url("RFTone-ExtraBold.woff2") format("woff2"), url("RFTone-ExtraBold.woff") format("woff"), url("RFTone-ExtraBold.ttf") format("truetype");
+  src: local("RF Tone ExtraBold"), local("RF-Tone-ExtraBold"), url("../fonts/RFTone-ExtraBold.woff2") format("woff2"), url("../fonts/RFTone-ExtraBold.woff") format("woff"), url("../fonts/RFTone-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 
-button {
-  display: block;
+.container {
+  width: 1420px;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+
+html {
+  font-size: 10px;
+}
+
+.navigation {
+  display: grid;
+  grid-template: 100% / 330px 840px 220px;
+  grid-gap: 10px;
+}
+
+.navigation__logo {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.navigation__logo img {
+  width: 100%;
+}
+
+.navigation-menu {
+  grid-area: 1 / 2 /2 / 3;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.navigation-menu__link {
+  text-decoration: none;
+  font-family: 'RF Tone';
+  font-weight: 300;
+  color: #000000;
+  font-size: 1.9rem;
+}
+
+.navigation-contacts {
+  grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navigation-contacts-phone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.navigation-contacts-phone__number {
+  font-family: 'RF Tone';
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #403E3E;
+  margin-bottom: 10px;
+}
+
+.navigation-contacts-social {
+  display: flex;
+  justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */
