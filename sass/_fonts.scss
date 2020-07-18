@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'RF Tone';
+    src: local('RF Tone Light'), local('RF-Tone-Light'),
+        url('../fonts/RFTone-Light.woff2') format('woff2'),
+        url('../fonts/RFTone-Light.woff') format('woff'),
+        url('../fonts/RFTone-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'RF Tone';
+    src: local('RF Tone Regular'), local('RF-Tone-Regular'),
+        url('../fonts/RFTone-Regular.woff2') format('woff2'),
+        url('../fonts/RFTone-Regular.woff') format('woff'),
+        url('../fonts/RFTone-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'RF Tone';
+    src: local('RF Tone SemiBold'), local('RF-Tone-SemiBold'),
+        url('../fonts/RFTone-SemiBold.woff2') format('woff2'),
+        url('../fonts/RFTone-SemiBold.woff') format('woff'),
+        url('../fonts/RFTone-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'RF Tone';
+    src: local('RF Tone ExtraBold'), local('RF-Tone-ExtraBold'),
+        url('RFTone-ExtraBold.woff2') format('woff2'),
+        url('RFTone-ExtraBold.woff') format('woff'),
+        url('RFTone-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @mixin light {
+    font-family: 'RF Tone';
+    font-weight: 300;
+  }
+
+  @mixin regular{
+    font-family: 'RF Tone';
+    font-weight: 400;
+  }
+
+  @mixin semibold{
+    font-family: 'RF Tone';
+    font-weight: 600;
+  }
+
+  @mixin bold{
+    font-family: 'RF Tone';
+    font-weight: 800;
+  }
