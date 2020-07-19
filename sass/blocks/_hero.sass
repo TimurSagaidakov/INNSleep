@@ -1,0 +1,46 @@
+.hero
+    width: 100%
+    background: url(../img/hero.png) no-repeat
+    background-size: cover
+    background-position: bottom right
+    margin-top: 15vh
+    overflow: hidden
+    height: 85vh
+    &-body
+        display: grid
+        grid-template: 25% 25% 25% 25%/ 60% 40%
+        @media ( max-width: $xl)     
+            grid-template: 25% 25% 25% 25%/100%   
+    &__title
+        grid-area: 1/1/2 /2
+        text-align: center
+        +bold
+        font-size: 6.2rem
+        color: #ffffff
+        text-transform: uppercase
+    &__description
+        grid-area: 2 / 1 /3 /2
+        width: 80%
+        margin: auto
+        font-size: 3rem
+        color: #fdf5f5
+        +regular
+        text-align: center
+    &-button
+        grid-area: 3/1/4/2
+        margin: auto
+        &__continue
+            background: transparent
+            white-space: nowrap
+            margin-left: 20px
+    &__opacity
+        grid-area: 4/1/5/3
+        margin-bottom: 200px
+        +bold
+        color: #c2c2c2
+        font-size: 29rem
+        opacity: 0.1
+        text-transform: uppercase
+        text-align: center
+        letter-spacing: 0.02em
+    

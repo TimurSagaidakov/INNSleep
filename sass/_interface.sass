@@ -1,2 +1,19 @@
 html
     font-size: 10px
+    @media  ( max-width: 1280px )
+        font-size: 8px
+b
+    color: #B264F0
+.button
+    text-decoration: none
+    padding: 20px 60px
+    background: linear-gradient(270deg, $primary-color 12.6%, #862AF1 100%)
+    background-position: 0 0
+    border-radius: 100px
+    +bold
+    font-size: 2.5rem
+    color: #ffffff
+    border: 1.5px solid #6E25A9
+    &:hover
+        animation: buttonHover 2s infinite
+        background: linear-gradient(270deg, $primary-color 12.6%, #862AF1 100%)
