@@ -47,6 +47,7 @@ b {
 }
 
 .button {
+  display: inline-block;
   text-decoration: none;
   padding: 20px 60px;
   background: linear-gradient(270deg, #6E25A9 12.6%, #862AF1 100%);
@@ -56,17 +57,113 @@ b {
   font-weight: 800;
   font-size: 2.5rem;
   color: #ffffff;
-  border: 1.5px solid #6E25A9;
+  border: 1px solid #6E25A9;
 }
 
 .button:hover {
-  animation: buttonHover 2s infinite;
+  animation: buttonHover 0.5s  linear;
   background: linear-gradient(270deg, #6E25A9 12.6%, #862AF1 100%);
 }
 
 @keyframes buttonHover {
   100% {
     background-position: 305px 0;
+  }
+}
+
+@keyframes fill-4 {
+  0% {
+    background-color: #fff;
+  }
+  15% {
+    background-color: #C785FC;
+  }
+  100% {
+    background-color: #C785FC;
+  }
+}
+
+@keyframes fill-3 {
+  15% {
+    background-color: #fff;
+  }
+  30% {
+    background-color: #C785FC;
+  }
+  100% {
+    background-color: #C785FC;
+  }
+}
+
+@keyframes fill-2 {
+  30% {
+    background-color: #fff;
+  }
+  45% {
+    background-color: #C785FC;
+  }
+  100% {
+    background-color: #C785FC;
+  }
+}
+
+@keyframes fill-1 {
+  45% {
+    background-color: #fff;
+  }
+  60% {
+    background-color: #C785FC;
+  }
+  100% {
+    background-color: #C785FC;
+  }
+}
+
+@keyframes empty-1 {
+  0% {
+    background-color: #C785FC;
+  }
+  15% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes empty-2 {
+  15% {
+    background-color: #C785FC;
+  }
+  30% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes empty-3 {
+  30% {
+    background-color: #C785FC;
+  }
+  45% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes empty-4 {
+  45% {
+    background-color: #C785FC;
+  }
+  60% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #ffffff;
   }
 }
 
@@ -238,5 +335,160 @@ b {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+.advantages {
+  margin-top: 50px;
+}
+
+.advantages__title {
+  font-size: 4.6rem;
+  font-family: 'RF Tone';
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.advantages-main__point {
+  display: none;
+}
+
+.advantages__img {
+  width: 100%;
+}
+
+.about {
+  text-align: center;
+}
+
+.about__title {
+  font-size: 5.7rem;
+  color: #6E25A9;
+  font-family: 'RF Tone';
+  font-weight: 300;
+  text-align: center;
+  margin: 50px 0 70px 0;
+}
+
+.about-main {
+  display: flex;
+  align-items: center;
+}
+
+.about-main__img {
+  width: 40%;
+}
+
+.about-main__text {
+  display: block;
+  width: 50%;
+  padding-right: 50px;
+  font-size: 3rem;
+  font-family: 'RF Tone';
+  font-weight: 400;
+  line-height: 3.6rem;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about-main {
+    display: block;
+  }
+  .about-main__img {
+    width: 100%;
+  }
+  .about-main__text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+}
+
+.about__button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hormone {
+  margin-top: 7rem;
+}
+
+.hormone-block {
+  width: 100%;
+  height: 650px;
+  background: url("../img/hormone.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hormone-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hormone-item__line {
+  width: 190px;
+  height: 23px;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.hormone-item__line-1 {
+  animation: fill-1 4s infinite forwards;
+}
+
+.hormone-item__line-2 {
+  animation: fill-2 4s infinite forwards;
+}
+
+.hormone-item__line-3 {
+  animation: fill-3 4s infinite forwards;
+}
+
+.hormone-item__line-4 {
+  animation: fill-4 4s infinite forwards;
+}
+
+.hormone-item__line-empty {
+  background-color: #f1f1f1;
+  width: 190px;
+  height: 23px;
+  margin-bottom: 15px;
+}
+
+.hormone-item__line-empty-1 {
+  animation: empty-1 4s infinite forwards;
+}
+
+.hormone-item__line-empty-2 {
+  animation: empty-2 4s infinite forwards;
+}
+
+.hormone-item__line-empty-3 {
+  animation: empty-3 4s infinite forwards;
+}
+
+.hormone-item__line-empty-4 {
+  animation: empty-4 4s infinite forwards;
+}
+
+.hormone-item__big {
+  font-family: 'RF Tone';
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 3.6rem;
+}
+
+.hormone-item__small {
+  font-family: 'RF Tone';
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 2.7rem;
 }
 /*# sourceMappingURL=style.css.map */
