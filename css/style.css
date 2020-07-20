@@ -138,6 +138,10 @@ ul {
   }
 }
 
+.lock {
+  overflow: hidden;
+}
+
 @keyframes buttonHover {
   100% {
     background-position: 305px 0;
@@ -465,7 +469,7 @@ ul {
     outline: none;
   }
   .navigation-contacts-phone__number {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -584,6 +588,41 @@ ul {
 
 .advantages__img {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .advantages__img {
+    display: none;
+  }
+  .advantages-main {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .advantages-main__point {
+    display: block;
+    align-items: center;
+    font-size: 21px;
+    font-family: 'RF Tone';
+    font-weight: 300;
+  }
+  .advantages-main li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .advantages-main li::before {
+    content: '\2022';
+    width: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    color: #6E25A9;
+    font-size: 10rem;
+  }
+}
+
+.point__text {
+  margin-left: 20px;
 }
 
 .about {

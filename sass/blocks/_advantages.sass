@@ -10,4 +10,31 @@
         &__point
             display: none
     &__img
-        width: 100%        
+        width: 100%   
+@media ( max-width:  $md)
+    .advantages
+        &__img
+            display: none
+        &-main
+            display: flex
+            flex-wrap: wrap
+            list-style: none
+            &__point
+                display: block
+                align-items: center
+                font-size: 21px
+                +light
+            li
+                display: flex
+                align-items: center
+                justify-content: center
+                &::before
+                    content: '\2022'
+                    width: 2rem
+                    font-weight: bold
+                    display: inline-block
+                    color: $primary-color
+                    font-size: 10rem
+.point__text
+    margin-left: 20px
+         
