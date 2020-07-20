@@ -1,0 +1,56 @@
+.sleep
+    margin-top: 5rem
+    &-head
+        display: flex
+        margin: 0 auto
+        justify-content: space-between
+        img
+            width: 49%
+    &-block
+        display: flex
+        justify-content: space-between
+        margin-top: 5rem
+    &-before
+        box-sizing: border-box
+        width: 49%
+        background: #EAEAEA
+        box-shadow: 0px 4px 20px #BDBCBC
+        border-radius: 48px
+        padding: 40px 150px
+        &__title    
+            font-size: 3.5rem
+            +light
+            color: rgba(0, 0, 0, 0.74)
+            text-align: center
+        &-list
+            list-style: none
+            &__point
+                display: flex
+                align-items: center
+                font-size: 2.2rem
+                +light
+                &:before
+                    content: '\2022'
+                    font-weight: bold
+                    display: inline-block
+                    color: $primary-color
+                    font-size: 5rem
+                    margin-right: 15px
+    &-after
+        box-sizing: border-box
+        width: 49% 
+        background: #F1DFFF
+        box-shadow: 0px 4px 20px rgba(194, 163, 218, 0.85)
+        border-radius: 48px
+        padding: 40px 120px
+        text-align: center
+        &__title
+            font-size: 3.5rem
+            +regular
+            color: rgba(0, 0, 0, 0.74) 
+        &__description
+            +light
+            font-size: 4.5rem
+            color: #7E20CA
+            text-align: center
+

@@ -583,6 +583,10 @@ ul {
   margin-bottom: 50px;
 }
 
+.advantages-main {
+  list-style: none;
+}
+
 .advantages-main__point {
   display: none;
 }
@@ -598,7 +602,6 @@ ul {
   .advantages-main {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
   }
   .advantages-main__point {
     display: block;
@@ -876,6 +879,28 @@ ul {
   font-size: 2.2rem;
 }
 
+.differences-footer {
+  text-align: center;
+}
+
+.differences-footer__text {
+  margin: 10rem auto 0;
+  width: 50%;
+  font-family: 'RF Tone';
+  font-weight: 400;
+  font-size: 3.5rem;
+  color: #6E25A9;
+  border: 4px solid #EEDAFF;
+  box-shadow: 0px 0px 10px #8A12EB;
+  border-radius: 12px;
+}
+
+@media (max-width: 992px) {
+  .differences-footer__text {
+    width: 80%;
+  }
+}
+
 @media (max-width: 576px) {
   .differences-block {
     width: 100%;
@@ -897,5 +922,88 @@ ul {
   .differences-composition-item:nth-of-type(2n+2) {
     margin-top: 70px;
   }
+}
+
+.sleep {
+  margin-top: 5rem;
+}
+
+.sleep-head {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.sleep-head img {
+  width: 49%;
+}
+
+.sleep-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.sleep-before {
+  box-sizing: border-box;
+  width: 49%;
+  background: #EAEAEA;
+  box-shadow: 0px 4px 20px #BDBCBC;
+  border-radius: 48px;
+  padding: 40px 150px;
+}
+
+.sleep-before__title {
+  font-size: 3.5rem;
+  font-family: 'RF Tone';
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.74);
+  text-align: center;
+}
+
+.sleep-before-list {
+  list-style: none;
+}
+
+.sleep-before-list__point {
+  display: flex;
+  align-items: center;
+  font-size: 2.2rem;
+  font-family: 'RF Tone';
+  font-weight: 300;
+}
+
+.sleep-before-list__point:before {
+  content: '\2022';
+  font-weight: bold;
+  display: inline-block;
+  color: #6E25A9;
+  font-size: 5rem;
+  margin-right: 15px;
+}
+
+.sleep-after {
+  box-sizing: border-box;
+  width: 49%;
+  background: #F1DFFF;
+  box-shadow: 0px 4px 20px rgba(194, 163, 218, 0.85);
+  border-radius: 48px;
+  padding: 40px 120px;
+  text-align: center;
+}
+
+.sleep-after__title {
+  font-size: 3.5rem;
+  font-family: 'RF Tone';
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.sleep-after__description {
+  font-family: 'RF Tone';
+  font-weight: 300;
+  font-size: 4.5rem;
+  color: #7E20CA;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
