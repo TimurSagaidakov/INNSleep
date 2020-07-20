@@ -2,8 +2,14 @@ html
     font-size: 10px
     @media  ( max-width: 1280px )
         font-size: 8px
+    @media  ( max-width: $lg )
+        font-size: 7px
+    @media  ( max-width: $sm )
+        font-size: 6px    
 b
     color: #B264F0
+ul
+    padding: 0
 .button
     display: inline-block
     text-decoration: none
@@ -18,3 +24,36 @@ b
     &:hover
         animation: buttonHover 0.5s  linear
         background: linear-gradient(270deg, $primary-color 12.6%, #862AF1 100%)
+.menu-btn
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    height: 30px
+    display: none
+    span
+        width: 30px
+        height: 3px
+        background-color: $primary-color
+    &.close
+        span
+            transform: rotate(0deg)  translate(0,0)            
+            transition: 0.2s
+            &:nth-child(1)                
+                display: block
+                transform: rotate(45deg)  translate(-7px,-7px)
+                transform-origin: left 
+                width: 35px
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                display: block
+                transform: rotate(-45deg)  
+                transform-origin: left
+                width: 35px
+    @media ( max-width:  $sm)
+        display: flex
+        order: 3
+        align-self: center
+        margin-left: 10px
+        
