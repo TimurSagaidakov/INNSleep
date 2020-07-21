@@ -1,5 +1,7 @@
 .advantages
     margin-top: 50px
+    &__bg
+        display: none
     &__title
         font-size: 4.6rem
         +bold
@@ -14,6 +16,11 @@
         width: 100%   
 @media ( max-width:  $md)
     .advantages
+        &__bg
+            display: block
+            margin-bottom: 30px
+            img
+                width: 100%
         &__img
             display: none
         &-main
@@ -28,6 +35,7 @@
                 display: flex
                 align-items: center
                 justify-content: center
+                margin-bottom: 20px
                 &::before
                     content: '\2022'
                     width: 2rem

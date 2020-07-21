@@ -591,6 +591,10 @@ ul {
   margin-top: 50px;
 }
 
+.advantages__bg {
+  display: none;
+}
+
 .advantages__title {
   font-size: 4.6rem;
   font-family: 'RF Tone';
@@ -613,6 +617,13 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .advantages__bg {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .advantages__bg img {
+    width: 100%;
+  }
   .advantages__img {
     display: none;
   }
@@ -631,6 +642,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
   }
   .advantages-main li::before {
     content: '\2022';
