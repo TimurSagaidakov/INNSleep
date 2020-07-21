@@ -1,0 +1,104 @@
+.principle
+    margin-top: 10rem
+    &__title
+        +regular
+        font-size: 5rem
+        text-align: center
+        color: $primary-color
+    &-body
+        display: flex
+        flex-wrap: wrap
+        img
+            width: 100%
+            height: 100%
+    &-item
+        flex-basis: 50%
+        &-wrapper
+            padding: 2rem
+            position: relative
+            margin: 0 auto
+        &__bg
+            position: absolute
+            top: 0
+            right: 0
+            z-index: -1
+            +bold
+            font-size: 37rem 
+            color: #ffffff
+            text-shadow: 2px 0 0 rgba(0,0,0,0.1), -2px 0 0 rgba(0,0,0,0.1), 0 2px 0 rgba(0,0,0,0.1), 0 -2px 0 rgba(0,0,0,0.1)
+        &__number
+            display: block
+            +bold
+            font-size: 22.5rem
+            color: rgba(102, 22, 199, 0.42)
+            opacity: 0.6
+        &__text
+            +light
+            font-size: 2.5rem
+    &__img        
+        &-1
+            background: url(../img/principle-1.png)
+            flex-basis: 50% 
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center center
+        &-2
+            background: url(../img/principle-2.png)
+            flex-basis: 50% 
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center center
+        &-3
+            background: url(../img/principle-3.png)
+            flex-basis: 50% 
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center right
+@media ( max-width: $md )
+    .principle
+        &-body
+            display: flex
+        &-item
+            text-align: center
+            flex-basis: 100%
+            &-1               
+                order: 1
+            &-2       
+                order: 3
+            &-3             
+                order: 5
+            &__bg
+                display: none
+        &__img
+            &-1
+                flex-basis: 100%
+                height: 415px
+                order: 2
+                background-size: 100%
+                @media ( max-width:  $xs)   
+                    height: 200px                    
+            &-2
+                flex-basis: 100%
+                height: 415px
+                order: 4
+                background-size: 100%
+                @media ( max-width:  $xs)   
+                    height: 200px
+            &-3
+                flex-basis: 100%
+                height: 415px
+                order: 6
+                background-size: 100%
+                @media ( max-width:  $xs)   
+                    height: 200px
+
+
+    
+            
+                
+
+    
+
+
+            
+        
