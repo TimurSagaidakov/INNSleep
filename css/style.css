@@ -65,7 +65,7 @@ html {
 }
 
 b {
-  color: #B264F0;
+  color: #6E25A9;
 }
 
 ul {
@@ -104,6 +104,7 @@ ul {
   width: 30px;
   height: 3px;
   background-color: #6E25A9;
+  transition: 0.2s;
 }
 
 .menu-btn.close span {
@@ -113,18 +114,20 @@ ul {
 
 .menu-btn.close span:nth-child(1) {
   display: block;
-  transform: rotate(45deg) translate(-7px, -7px);
+  transform: rotate(45deg) translateY(-1px);
   transform-origin: left;
   width: 35px;
 }
 
 .menu-btn.close span:nth-child(2) {
-  display: none;
+  display: block;
+  transform-origin: left;
+  transform: translateX(-50px) scale(0);
 }
 
 .menu-btn.close span:nth-child(3) {
   display: block;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(-2px, 3px);
   transform-origin: left;
   width: 35px;
 }
@@ -151,7 +154,7 @@ ul {
 @keyframes menuRight {
   0% {
     opacitty: 0;
-    left: 50px;
+    left: 100px;
   }
   100% {
     opacity: 1;
@@ -390,7 +393,7 @@ ul {
   .navigation-menu {
     display: block;
     position: absolute;
-    top: 90%;
+    top: 84%;
     left: 0;
     right: 0;
     opacity: 0;
@@ -419,22 +422,22 @@ ul {
     transform-origin: right bottom;
   }
   .navigation-menu.open li:nth-of-type(2) {
-    animation-delay: 0.5s;
-  }
-  .navigation-menu.open li:nth-of-type(3) {
     animation-delay: 0.6s;
   }
-  .navigation-menu.open li:nth-of-type(4) {
-    animation-delay: 0.7s;
-  }
-  .navigation-menu.open li:nth-of-type(5) {
+  .navigation-menu.open li:nth-of-type(3) {
     animation-delay: 0.8s;
   }
+  .navigation-menu.open li:nth-of-type(4) {
+    animation-delay: 1s;
+  }
+  .navigation-menu.open li:nth-of-type(5) {
+    animation-delay: 1.2s;
+  }
   .navigation-menu.open li:nth-of-type(6) {
-    animation-delay: 0.9s;
+    animation-delay: 1.4s;
   }
   .navigation-menu.open li:nth-of-type(7) {
-    animation-delay: 1s;
+    animation-delay: 1.6s;
   }
   .navigation-menu li {
     position: relative;
@@ -446,6 +449,7 @@ ul {
     font-size: 20px;
     margin-bottom: 10px;
     padding: 15px;
+    box-shadow: 0 0 20px rgba(110, 37, 169, 0.3);
   }
   .navigation-menu__link::before {
     display: none;
@@ -454,17 +458,17 @@ ul {
     display: none;
   }
   .navigation-menu__link:hover {
-    transform: translateX(-2px);
+    transform: translateX(-10px);
     padding-left: 80px;
     outline: none;
   }
   .navigation-menu__link:active {
-    transform: translateX(-2px);
+    transform: translateX(-10px);
     padding-left: 80px;
     outline: none;
   }
   .navigation-menu__link:focus {
-    transform: translateX(-2px);
+    transform: translateX(-10px);
     padding-left: 80px;
     outline: none;
   }
@@ -988,7 +992,7 @@ ul {
   background: #F1DFFF;
   box-shadow: 0px 4px 20px rgba(194, 163, 218, 0.85);
   border-radius: 48px;
-  padding: 40px 120px;
+  padding: 4rem 12rem;
   text-align: center;
 }
 
@@ -1005,5 +1009,95 @@ ul {
   font-size: 4.5rem;
   color: #7E20CA;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .sleep-before {
+    padding: 2rem;
+  }
+  .sleep-after {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sleep-head__before {
+    display: none;
+  }
+  .sleep-head img {
+    width: 100%;
+  }
+  .sleep-before {
+    display: none;
+  }
+  .sleep-after {
+    width: 100%;
+  }
+}
+
+.features {
+  margin-top: 9rem;
+}
+
+.features__title {
+  font-size: 5.7rem;
+  font-family: 'RF Tone';
+  font-weight: 300;
+  color: #6E25A9;
+  text-align: center;
+}
+
+.features__img {
+  text-align: center;
+}
+
+.features__img img {
+  width: 60%;
+}
+
+@media (max-width: 992px) {
+  .features__img img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .features__img img {
+    width: 100%;
+  }
+}
+
+.features-item {
+  display: flex;
+  align-items: center;
+  margin-top: 9rem;
+}
+
+.features-item-text {
+  margin-left: 4rem;
+}
+
+.features-item-text__title {
+  font-size: 3.5rem;
+  font-family: 'RF Tone';
+  font-weight: 600;
+}
+
+.features-item-text__body {
+  font-size: 3.5rem;
+  font-family: 'RF Tone';
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .features-item {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .features-item-text {
+    margin-left: 0;
+    margin-top: 3rem;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -92,7 +92,7 @@
         &-menu
             display: block
             position: absolute
-            top: 90%
+            top: 84%
             left: 0
             right: 0
             opacity: 0
@@ -118,17 +118,17 @@
                     transform: rotate(-15deg)
                     transform-origin: right bottom
                     &:nth-of-type(2)
-                        animation-delay: 0.5s
-                    &:nth-of-type(3)
                         animation-delay: 0.6s
-                    &:nth-of-type(4)
-                        animation-delay: 0.7s
-                    &:nth-of-type(5)
+                    &:nth-of-type(3)
                         animation-delay: 0.8s
+                    &:nth-of-type(4)
+                        animation-delay: 1s
+                    &:nth-of-type(5)
+                        animation-delay: 1.2s
                     &:nth-of-type(6)
-                        animation-delay: 0.9s
+                        animation-delay: 1.4s
                     &:nth-of-type(7)
-                        animation-delay: 1s 
+                        animation-delay: 1.6s 
             li
                 position: relative
                 opacity: 0                       
@@ -138,20 +138,21 @@
                 font-size: 20px
                 margin-bottom: 10px
                 padding: 15px
+                box-shadow: 0 0 20px rgba(110, 37, 169, 0.3)
                 &::before
                     display: none
                 &::after
                     display: none
                 &:hover
-                    transform: translateX(-2px)
+                    transform: translateX(-10px)
                     padding-left: 80px
                     outline: none
                 &:active
-                    transform: translateX(-2px)
+                    transform: translateX(-10px)
                     padding-left: 80px
                     outline: none
                 &:focus
-                    transform: translateX(-2px)
+                    transform: translateX(-10px)
                     padding-left: 80px
                     outline: none
         &-contacts

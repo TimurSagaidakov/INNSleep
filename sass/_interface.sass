@@ -7,7 +7,7 @@ html
     @media  ( max-width: $sm )
         font-size: 6px    
 b
-    color: #B264F0
+    color: $primary-color
 ul
     padding: 0
 .button
@@ -35,20 +35,23 @@ ul
         width: 30px
         height: 3px
         background-color: $primary-color
+        transition: 0.2s
     &.close
         span
             transform: rotate(0deg)  translate(0,0)            
             transition: 0.2s
             &:nth-child(1)                
                 display: block
-                transform: rotate(45deg)  translate(-7px,-7px)
+                transform: rotate(45deg)  translateY(-1px)
                 transform-origin: left 
                 width: 35px
             &:nth-child(2)
-                display: none
+                display: block
+                transform-origin: left
+                transform: translateX(-50px) scale(0)
             &:nth-child(3)
                 display: block
-                transform: rotate(-45deg)  
+                transform: rotate(-45deg)  translate(-2px,3px)
                 transform-origin: left
                 width: 35px
     @media ( max-width:  $sm)

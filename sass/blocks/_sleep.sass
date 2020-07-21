@@ -42,7 +42,7 @@
         background: #F1DFFF
         box-shadow: 0px 4px 20px rgba(194, 163, 218, 0.85)
         border-radius: 48px
-        padding: 40px 120px
+        padding: 4rem 12rem
         text-align: center
         &__title
             font-size: 3.5rem
@@ -53,4 +53,22 @@
             font-size: 4.5rem
             color: #7E20CA
             text-align: center
+@media ( max-width:  $xl)
+    .sleep
+        &-before
+            padding: 2rem
+        &-after
+            padding: 2rem
+@media ( max-width:  $md)
+    .sleep
+        &-head
+            &__before
+                display: none
+            img
+                width: 100%
+        &-before
+            display: none
+        &-after
+            width: 100%
 
+    
