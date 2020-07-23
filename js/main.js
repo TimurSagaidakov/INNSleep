@@ -30,4 +30,14 @@ $(document).ready(function(){
     });
 });
 
+$('.reviews-block').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    prevArrow: $('.reviews-arrow__prev'),
+    nextArrow: $('.reviews-arrow__next'),
+    pauseOnHover: true
+});
+
    
