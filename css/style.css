@@ -107,6 +107,7 @@ q {
 .button:hover {
   animation: buttonHover 0.5s  linear;
   background: linear-gradient(270deg, #6E25A9 12.6%, #862AF1 100%);
+  cursor: url(../img/pointer.cur), pointer;
 }
 
 .menu-btn {
@@ -1760,7 +1761,7 @@ q {
 }
 
 .reviews-arrow__prev {
-  cursor: pointer;
+  cursor: url(../img/pointer.cur), pointer;
   stroke: #000000;
 }
 
@@ -1769,7 +1770,7 @@ q {
 }
 
 .reviews-arrow__next {
-  cursor: pointer;
+  cursor: url(../img/pointer.cur), pointer;
   stroke: #000000;
 }
 
@@ -1884,7 +1885,7 @@ q {
 }
 
 .questions-item-trigger:hover {
-  cursor: pointer;
+  cursor: url(../img/pointer.cur), pointer;
 }
 
 .questions-item__text {
