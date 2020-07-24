@@ -28,6 +28,12 @@ $(document).ready(function(){
         $('.formulation-item__description-2').removeClass('active');
         $('.formulation-item__description-3').removeClass('active');
     });
+
+    $('.questions-item-trigger').click(function(){
+        $(this).next('.questions-item__text').slideToggle(1000);  
+        $(this).find('.questions-item-trigger-button__vertical').toggleClass('questions-item-trigger-button__vertical-active');     
+
+    });
 });
 
 $('.reviews-block').slick({

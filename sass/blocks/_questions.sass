@@ -1,0 +1,75 @@
+.questions
+    margin-top: 16rem
+    &__title
+        +light
+        font-size: 5rem
+        text-align: center
+        text-transform: uppercase
+        color: $primary-color
+    &-block
+        width: 80%
+        margin: 0 auto
+    &-item
+        border-top: 1px solid #590AF5
+        &:last-of-type
+            border-bottom: 1px solid #590AF5
+        &-trigger
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 3rem 0
+            &__question
+                +semibold
+                font-size: 3rem
+                color: #1e1d20
+                width: 80%
+            &-button
+                width: 62px
+                height: 62px
+                background: linear-gradient(209.85deg, #6E25A9 12.42%, #862AF1 87.08%), #7343D2
+                border-radius: 50%
+                position: relative
+                &__horizontal
+                    background-color: #fff
+                    position: absolute
+                    width: 32px
+                    height: 3px
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                &__vertical
+                    background-color: #fff
+                    width: 3px
+                    height: 32px
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    transition: 1s
+                    &-active
+                        transform: translate(-50%,100%) scale(0.5)
+            &:hover
+                cursor: pointer
+        &__text
+            +light
+            font-size: 2.8rem
+            border-top: 1px solid #590AF5
+            padding: 3rem 0
+            line-height: 5rem
+            display: none
+@media ( max-width:  $md)
+    .questions
+        &-block
+            width: 100%
+        &-item
+            &-trigger
+                &-button
+                    width: 32px
+                    height: 32px
+                    &__horizontal
+                        width: 16px
+                        height: 2px
+                    &__vertical
+                        width: 2px
+                        height: 16px
+    
