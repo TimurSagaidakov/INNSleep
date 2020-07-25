@@ -110,6 +110,10 @@ q {
   cursor: url(../img/pointer.cur), pointer;
 }
 
+a:hover {
+  cursor: url(../img/pointer.cur), pointer;
+}
+
 .menu-btn {
   display: flex;
   flex-direction: column;
@@ -1914,5 +1918,243 @@ q {
     width: 2px;
     height: 16px;
   }
+}
+
+.contacts {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.contacts-follow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-follow__img {
+  margin-right: 2rem;
+}
+
+.contacts-follow__img:last-of-type {
+  margin-right: 0;
+}
+
+.contacts-follow__img img {
+  width: 100%;
+}
+
+.contacts-follow__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-follow__button:hover {
+  animation: none;
+}
+
+.contacts__title {
+  font-family: 'RF Tone';
+  font-weight: 300;
+  color: #6E25A9;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.contacts-block {
+  display: flex;
+  width: 80%;
+  margin: 7rem auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-item__line {
+  width: 1px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 1rem;
+}
+
+.contacts-item__name {
+  font-family: 'RF Tone';
+  font-weight: 600;
+  color: #39007b;
+  font-size: 2.8rem;
+  margin-right: 3.5rem;
+}
+
+.contacts-item__address {
+  font-family: 'RF Tone';
+  font-weight: 300;
+  color: #240808;
+  font-size: 2.8rem;
+  text-decoration: none;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.contacts-item__address:hover {
+  color: #6E25A9;
+}
+
+.contacts-social__link {
+  display: inline-block;
+  margin-right: 2.8rem;
+}
+
+.contacts-social__link svg {
+  stroke: black;
+  transition: 0.2s;
+}
+
+.contacts-social__link svg:hover {
+  stroke: #6E25A9;
+}
+
+@media (max-width: 576px) {
+  .contacts-follow__img {
+    margin-right: 1rem;
+  }
+  .contacts-follow__button {
+    padding: 10px 30px;
+    font-size: 1.5rem;
+  }
+  .contacts-block {
+    display: block;
+    width: 100%;
+  }
+  .contacts-item {
+    width: 70%;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) and (max-width: 425px) {
+  .contacts-item {
+    width: 100%;
+  }
+}
+
+.footer {
+  margin-top: 7rem;
+  background-color: #555555;
+}
+
+.footer-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-navigation__logo {
+  flex-basis: 20%;
+}
+
+.footer-navigation-menu {
+  display: flex;
+  flex-basis: 70%;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.footer-navigation-menu a {
+  font-family: 'RF Tone';
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.footer-navigation-menu a::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform-origin: right;
+  transform: translateY(8px) scale(0);
+  transition: 1s;
+}
+
+.footer-navigation-menu a:hover::after {
+  transform: translateY(8px) scale(1);
+}
+
+.footer-navigation-menu a::before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform-origin: left;
+  transform: translateY(-8px) scale(0);
+  transition: 1s;
+}
+
+.footer-navigation-menu a:hover::before {
+  transform: translateY(-8px) scale(1);
+}
+
+.footer-basket {
+  position: relative;
+  text-decoration: none;
+}
+
+.footer-basket__amount {
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  font-family: 'RF Tone';
+  font-weight: 800;
+  font-size: 1.9rem;
+  color: #555555;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.footer-copy {
+  font-family: 'RF Tone';
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: #fffbfb;
+}
+
+.footer-social__link {
+  margin-right: 3rem;
+}
+
+.footer-phone {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer-phone__number {
+  font-family: 'RF Tone';
+  font-weight: 800;
+  font-size: 3rem;
+  color: #fffdfd;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */

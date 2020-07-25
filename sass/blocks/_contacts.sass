@@ -1,0 +1,82 @@
+.contacts
+    margin-top: 5rem
+    text-align: center
+    &-follow
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        &__img
+            margin-right: 2rem
+            &:last-of-type
+                margin-right: 0
+            img
+                width: 100%            
+        &__button
+            position: absolute
+            display: flex
+            align-items: center
+            justify-content: center
+            &:hover
+                animation: none
+    &__title
+        +light
+        color: $primary-color
+        text-transform: uppercase
+        font-size: 5rem        
+    &-block
+        display: flex
+        width: 80%
+        margin: 7rem auto
+        align-items: center
+        justify-content: space-around
+    &-item
+        display: flex
+        align-items: center
+        &__line
+            width: 1px
+            height: 120px
+            background-color: rgba(0,0,0,0.5)
+            margin: 0 1rem
+        &__name
+            +semibold
+            color: #39007b
+            font-size: 2.8rem
+            margin-right: 3.5rem
+        &__address
+            +light
+            color: #240808
+            font-size: 2.8rem
+            text-decoration: none
+            transition: 0.2s
+            white-space: nowrap
+            &:hover
+                color: $primary-color
+    &-social
+        &__link
+            display: inline-block
+            margin-right: 2.8rem
+            svg
+                stroke: black
+                transition: 0.2s
+                &:hover
+                    stroke: $primary-color
+@media ( max-width:  $sm)
+    .contacts
+        &-follow
+            &__img
+                margin-right: 1rem
+            &__button
+                padding: 10px 30px
+                font-size: 1.5rem
+        &-block
+            display: block
+            width: 100%
+        &-item
+            width: 70%
+            justify-content: space-between  
+            margin-bottom: 2rem
+            @media ( max-width:  $xs)
+                width: 100%
+
+    
