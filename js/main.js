@@ -34,6 +34,11 @@ $(document).ready(function(){
         $(this).find('.questions-item-trigger-button__vertical').toggleClass('questions-item-trigger-button__vertical-active');     
 
     });
+    $("a[href^='#']").click(function(){
+        var _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top -150 + "px"}, 1000);
+        return false;
+    });
 });
 
 $('.reviews-block').slick({

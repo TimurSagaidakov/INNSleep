@@ -2252,4 +2252,44 @@ a:hover {
     grid-area: 4/2/5/3;
   }
 }
+
+.secondary {
+  margin-top: 15vh;
+}
+
+.secondary__title {
+  display: block;
+  background: linear-gradient(90deg, rgba(232, 214, 255, 0.8) -2.73%, rgba(141, 79, 192, 0.8) 50.77%, rgba(134, 42, 241, 0.8) 100%), #A258DD;
+  font-family: 'RF Tone';
+  font-weight: 300;
+  font-size: 5rem;
+  text-align: center;
+  color: #fcf8ff;
+  padding: 20px 0;
+}
+
+.secondary__subtitle {
+  font-family: 'RF Tone';
+  font-weight: 600;
+  font-size: 4.5rem;
+}
+
+.secondary__paragraph {
+  font-family: 'RF Tone';
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.secondary__text {
+  font-family: 'RF Tone';
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 576px) {
+  .secondary {
+    margin-top: 20%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
