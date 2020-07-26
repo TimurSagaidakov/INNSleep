@@ -41,6 +41,8 @@ $('.reviews-block').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2000,    
     prevArrow: $('.reviews-arrow__prev'),
     nextArrow: $('.reviews-arrow__next'),
     pauseOnHover: true
