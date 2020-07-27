@@ -108,6 +108,16 @@
             padding: 0 3rem
             a
                 font-size: 18px
+                &::before
+                    display: none
+                &::after
+                    display: none
+                &:hover
+                    outline: none
+                &:active
+                    outline: none
+                &:focus
+                    outline: none
         &-phone
             grid-area: 1/3/2/4
             padding-right: 4rem
@@ -124,7 +134,7 @@
 @media ( max-width:  $sm)
     .footer
         &-block
-            grid-template: 25% 50% 13% 12%/30% 70%
+            grid-template: 27% 48% 13% 12%/30% 70%
         &-basket
             display: none
         &__logo

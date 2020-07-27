@@ -4,6 +4,11 @@ $(document).ready(function(){
         $('.navigation-menu').toggleClass('open');
         $('body').toggleClass('lock');
     });
+    $('.navigation-menu__link').on('click', function(){
+        $('.navigation-menu').removeClass('open');
+        $('.menu-btn').removeClass('close');
+        $('body').removeClass('lock');
+    });
     $('.formulation-item__plus-1').on('click', function(){
         $('.formulation-item__description-1').toggleClass('active');
         $('.formulation-item__description-2').removeClass('active');
