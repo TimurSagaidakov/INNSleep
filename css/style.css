@@ -678,6 +678,9 @@ a:hover {
     color: #6E25A9;
     font-size: 10rem;
   }
+  .advantages-main li:last-of-type::before {
+    display: none;
+  }
 }
 
 .point__text {
