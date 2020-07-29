@@ -3,9 +3,8 @@
     background: url(../img/hero.png) no-repeat
     background-size: cover
     background-position: bottom right
-    margin-top: 15vh
+    margin-top: 6%
     overflow: hidden
-    height: 85vh
     &-body
         display: grid
         grid-template: 25% 25% 25% 25%/ 60% 40%
@@ -43,11 +42,14 @@
         text-transform: uppercase
         text-align: center
         letter-spacing: 0.02em
+@media ( max-width: $lg )
+    .hero
+        margin-top: 12%
 @media ( max-width: $sm)  
     .hero
         display: block
-        height: auto
-        margin-top: 20% 
+        margin-top: 20%
+        height: 80%
         &-button
             margin-top: 50px
             &__continue

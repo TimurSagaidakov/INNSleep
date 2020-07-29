@@ -35,15 +35,76 @@
     &__img
         width: 100%
         display: block
-        margin-top: 9rem        
+        margin-top: 9rem   
+    &-img
+        margin-top: 15rem   
+        position: relative
+        img
+            width: 100%
+        &-point
+            position: absolute
+            display: flex
+            flex-direction: column
+            align-items: center
+            &::after
+                content: ''
+                background: linear-gradient(to bottom,rgba(37,13,84,1), rgba(37,13,84,0) 100%)
+                width: 3px
+                height: 22rem
+            &-1
+                bottom: -143px
+                left: 16%     
+                @media ( max-width:  $lg)
+                    bottom: -130px
+                @media ( max-width:  $xs)
+                    bottom: -125px                
+            &-2
+                bottom: -143px
+                left: 37% 
+                &::after
+                    height: 25rem
+                    @media ( max-width:  $xs)
+                        height: 22rem 
+                @media ( max-width:  $lg)
+                    bottom: -130px
+                @media ( max-width:  $xs)
+                    bottom: -125px
+            &-3
+                bottom: -143px
+                left: 58% 
+                @media ( max-width:  $lg)
+                    bottom: -130px
+                @media ( max-width:  $xs)
+                    bottom: -125px
+            &-4
+                bottom: -143px
+                left: 79% 
+                &::after
+                    height: 25rem
+                    @media ( max-width:  $xs)
+                        height: 22rem                        
+                @media ( max-width:  $lg)
+                    bottom: -130px
+                @media ( max-width:  $xs)
+                    bottom: -125px  
+        &-circle
+            display: inline-block
+            background-color: rgba(211,173,255,0.45)
+            border-radius: 100%
+            &__inside
+                width: 2.3rem
+                height: 2.3rem
+                background: #D2C6E1
+                margin: 1.3rem
+                border-radius: 15px             
     &-composition
         width: 85%
         margin: auto
         display: flex
-        justify-content: space-around   
+        justify-content: space-around  
+        margin-top: 21rem
         &-item
             width: 20%
-            margin-top: -50px
             text-align: center
             &__title
                 +bold
@@ -80,7 +141,6 @@
                     margin-right: 0
         &-composition
             &-item
-                margin-top: -30px
                 &__title
                     font-size: 10px
                     @media ( max-width:  $xs)
