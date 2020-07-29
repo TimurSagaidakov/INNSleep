@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Доставка</title>
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -46,26 +43,67 @@
         </div>
     </div>
 </header>
-<section class="section delivery">
-    <h2 class="secondary__title ">Доставка и оплата</h2>
+<section class="section card">
     <div class="container">
-        <p class="secondary__subtitle">Доставка по Беларуси</p>
-        <p class="secondary__paragraph">Стоимость доставки:</p>  
-        <p class="secondary__text">* курьерская доставка по Минску — бесплатная.</p> 
-        <p class="secondary__text">* Почтой по Беларуси — от 10 бел. руб. Точная стоимость уточняется предварительно.</p> 
-        <p class="secondary__paragraph">Оплата: </p>
-        <p class="secondary__text">- Вы можете оплатить Ваши покупки на сайте банковскими картами.</p>
-        <p class="secondary__text">- Так же Вы можете оплатить Ваши покупки при получении курьеру.</p>
-        <p class="secondary__text">Уточняйте, пожалуйста, заранее наличие терминалов для оплаты картой у курьера.</p>
-        <p class="secondary__text">Для уточнения любых других вопросов, пожалуйста, свяжитесь с нами.</p>
+        <div class="card-block">
+                <div class="card-sliders">
+                    <div class="card-slider">
+                        <img src="img/card-1.png" alt="одеяло">
+                        <img src="img/card-2.png" alt="теплое одеяло">
+                        <img src="img/card-3.png" alt="красивое одеяло">
+                        <img src="img/card-4.png" alt="мягкое одеяло">
+                        <img src="img/card-5.png" alt="одеяло">
+                    </div>
+                    <div class="card-slider-down">
+                        <img src="img/card-1.png" alt="одеяло">
+                        <img src="img/card-2.png" alt="теплое одеяло">
+                        <img src="img/card-3.png" alt="красивое одеяло">
+                        <img src="img/card-4.png" alt="мягкое одеяло">
+                        <img src="img/card-5.png" alt="одеяло">
+                    </div>
+                    <div class="card-slider-arrow">
+                        <svg class="card-slider-arrow__prev" width="32" height="57" viewBox="0 0 32 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.6601 1L0.998525 28.5L30.6601 56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                        <svg class="card-slider-arrow__next" width="32" height="57" viewBox="0 0 32 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.839844 1L30.5014 28.5L0.839844 56"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                       
+                    </div>
+                </div>
+            <div class="card-description">
+                <h2 class="card-description__title">Тяжелое одеяло INN SLEEP</h2>
+                <ul class="card-description-features">
+                    <li>против бессоницы</li>
+                    <li>против стресса</li>
+                    <li>против усталости</li>
+                </ul>
+                <span class="card-description__price">310 BYN</span>
+                <span class="card-description__text">Вес :  8 кг</span>
+                <span class="card-description__text">Размер :  150x200 см   </span>
+                <span class="card-description__text">Цвет: серый</span>
+                <div class="card-description-amount">
+                    <span class="card-description__text">Количество: </span> 
+                    <div class="card-description-amount-block">
+                        <input value="1" class="card-description-amount-block__number">
+                        <div class="card-description-amount-block-button">
+                            <div class="card-description-amount-block-button__plus">+</div>
+                            <div class="card-description-amount-block-button__minus">-</div>                            
+                        </div>
+                    </div>   
+                </div>
+                <div class="card-description-total">
+                    <span class="card-description__text total">Итого: </span> 
+                    <span class="card-description__text total__price">300 р</span> 
+                </div> 
+                <a href="#" class="button card-description__button">Оформить заказ</a>  
+            </div>
+        </div>
     </div>
 </section>
 
 
 
-
-
-<footer class="footer  margin">
+<footer class="footer">
     <div class="container">
         <div class="footer-block">
             <div class="footer__logo">
@@ -123,5 +161,8 @@
         </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

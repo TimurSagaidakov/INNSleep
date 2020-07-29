@@ -1,0 +1,111 @@
+.card
+    border-top: 1px solid rgba(0,0,0,0.5)
+    margin-top: 8%
+    &-block
+        display: flex
+        margin-top: 4.8rem
+        img
+            width: 100%
+            cursor: pointer
+    &-sliders
+        width: 40%
+        margin: 0 10rem 0 
+        position: relative
+    &-slider
+        z-index: 3
+        img
+            margin-right: 10px
+        &-down
+            img
+                margin-right: 10px
+        &-arrow
+            display: flex
+            position: absolute
+            top: 29%
+            left: -11%
+            width: 120%
+            justify-content: space-between
+            &__prev
+                cursor: url(../img/pointer.cur), pointer
+                stroke: #000000
+                &:hover
+                    stroke: #8D60C2                
+            &__next
+                cursor: url(../img/pointer.cur), pointer
+                stroke: #000000
+                &:hover
+                    stroke: #8D60C2
+    &-description
+        &__title
+            +semibold
+            font-size: 4.8rem
+            color: rgba(0,0,0,0.85)
+        &-features
+            display: flex
+            justify-content: space-between
+            align-items: center
+            list-style: none
+            li
+                flex-basis: 20%
+                align-self: center
+                +semibold
+                font-size: 2.1rem
+                padding-left: 60px
+                background-image: url('../img/tick.svg')
+                background-repeat: no-repeat
+                background-position: left
+                background-size: contain
+        &__price
+            display: block
+            margin: 5rem 0
+            +semibold
+            font-size: 4.2rem
+            color: rgba(0,0,0,0.8)
+        &__text
+            display: block
+            margin-bottom: 2.5rem
+            +semibold
+            font-size: 2.7rem
+            color: rgba(0,0,0,0.8)
+        &-total
+            display: flex
+        &-amount
+            display: flex
+            align-items: center
+            &-block
+                display: flex
+                margin-bottom: 3rem
+                margin-left: 3rem
+                &__number
+                    width: 20px
+                    border: 1px solid rgba(0, 0, 0, 0.6)
+                    border-radius: 7px 0 0 7px
+                    +regular
+                    color: $primary-color
+                    font-size: 2.7rem
+                    padding: 3rem
+                    border-right: 1px solid rgba(0, 0, 0, 0.6)
+                &-button
+                    display: flex
+                    flex-direction: column
+                    border: 1px solid rgba(0, 0, 0, 0.6)
+                    border-left: none
+                    border-radius: 0 7px 7px 0
+                    &__plus
+                        font-size: 3rem
+                        font-weight: bold
+                        color: $primary-color
+                        padding: 1rem
+                        cursor: pointer
+                    &__minus
+                        font-size: 3rem
+                        font-weight: bold
+                        color: $primary-color
+                        padding: 1rem
+                        border-top: 1px solid rgba(0, 0, 0, 0.6)
+                        text-align: center
+                        cursor: pointer
+                    
+.total
+    &__price
+        margin-left: 2rem

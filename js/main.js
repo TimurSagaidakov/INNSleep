@@ -57,5 +57,22 @@ $('.reviews-block').slick({
     nextArrow: $('.reviews-arrow__next'),
     pauseOnHover: true
 });
+$('.card-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    dots: true,
+    asNavFor: '.card-slider-down',
+    prevArrow: $('.card-slider-arrow__prev'),
+    nextArrow: $('.card-slider-arrow__next'),
+});
+$('.card-slider-down').slick({
+    infinite: true,
+    slidesToShow: 4,
+    dots: true,
+    asNavFor: '.card-slider',
+    focusOnSelect: true,
+});
+
+
 
    
