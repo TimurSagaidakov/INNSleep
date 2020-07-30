@@ -1,16 +1,25 @@
 .card
     border-top: 1px solid rgba(0,0,0,0.5)
     margin-top: 8%
+    @media ( max-width: $lg )
+        margin-top: 13%
+    @media ( max-width: $sm )
+        margin-top: 20%
     &-block
         display: flex
         margin-top: 4.8rem
+        @media ( max-width: $lg )
+            display: block
         img
             width: 100%
             cursor: pointer
     &-sliders
-        width: 40%
+        min-width: 20%
+        flex-basis: 40%
         margin: 0 10rem 0 
         position: relative
+        @media ( max-width: $sm )
+            margin: 0
     &-slider
         z-index: 3
         img
@@ -25,6 +34,8 @@
             left: -11%
             width: 120%
             justify-content: space-between
+            @media ( max-width: $sm )
+                display: none
             &__prev
                 cursor: url(../img/pointer.cur), pointer
                 stroke: #000000
@@ -35,7 +46,14 @@
                 stroke: #000000
                 &:hover
                     stroke: #8D60C2
+    button
+        display: none !important
     &-description
+        width: 50%
+        @media ( max-width: $lg )
+            width: 90%
+            @media ( max-width: $sm )
+                padding: 0 5% 0
         &__title
             +semibold
             font-size: 4.8rem
@@ -45,16 +63,20 @@
             justify-content: space-between
             align-items: center
             list-style: none
+            @media ( max-width: $lg )
+                display: block
             li
                 flex-basis: 20%
                 align-self: center
                 +semibold
                 font-size: 2.1rem
-                padding-left: 60px
+                padding-left: 6rem
                 background-image: url('../img/tick.svg')
                 background-repeat: no-repeat
                 background-position: left
                 background-size: contain
+                @media ( max-width: $lg )
+                    margin-bottom: 2rem
         &__price
             display: block
             margin: 5rem 0
