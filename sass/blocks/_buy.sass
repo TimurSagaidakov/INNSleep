@@ -1,10 +1,66 @@
 .buy
-    margin-top: 10%
+    margin-top: 8%
+    border-top: 1px solid #000
+    @media ( max-width: $lg )
+        margin-top: 13%
+    @media ( max-width: $sm )
+        margin-top: 23%
     &-block
         display: flex
+        justify-content: space-around
+        @media ( max-width: $md )
+            flex-direction: column
+    &-product
+        display: flex
+        flex-basis: 50%
+        margin-left: 2rem
+        margin-top: 2rem
+        @media ( max-width: $md )
+            order: 1
+        &-img
+            position: relative
+            &__amount
+                position: absolute
+                top: -5px
+                right: -5px
+                +bold
+                font-size: 2rem
+                color: #ffffff
+                background-color: $primary-color
+                border-radius: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 4rem
+                height: 4rem
+        &__title
+            +semibold
+            font-size: 2.5rem
+        &__text
+            +semibold
+            font-size: 2.2rem
+            opacity: 0.6
+            line-height: 3rem
+        &__number
+            +bold
+            font-size: 2.2rem
+            opacity: 0.7
+        &-description
+            margin-left: 2rem
+    &-total
+        margin-top: 3rem
 .form
     display: flex
+    flex-basis: 40%
     flex-direction: column
+    padding-right: 2rem
+    border-right: 1px solid rgba(0,0,0,0.3)
+    @media ( max-width: $lg )
+        width: 30%
+    @media ( max-width: $md )
+        order: 2
+        flex-basis: 100%
+        width: 100%
     &__input
         +semibold
         font-size: 2.2rem
@@ -22,14 +78,19 @@
             font-size: 2.2rem
             display: flex
             position: relative
+            margin-left: 30px
             &::before
                 display: block
                 content: ''
                 width: 20px
                 height: 20px
+                position: absolute
                 border: 1px solid #5017BF
                 border-radius: 100%
-                margin-right: 2rem
+                top: 0
+                left: -30px
+                @media ( max-width: $md )
+                    top: -2px
             &::after
                 content: ''
                 display: block
@@ -37,11 +98,15 @@
                 height: 16px
                 position: absolute
                 top: 3px
-                left: 3px               
+                left: -27px               
                 border-radius: 100%
+                @media ( max-width: $md )
+                    top: 1px
     &-address
         display: flex
         justify-content: space-between
+        input
+            width: 35%
     &-delivery
         display: flex
         justify-content: space-between
@@ -83,7 +148,9 @@
             &:checked + .form__label-money::after
                 background-color: $primary-color
     &__button
-        max-width: 220px        
+        width: 220px        
         margin: 0 auto
+        @media ( max-width: $lg )
+            width: 150px
                 
             

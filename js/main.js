@@ -77,6 +77,7 @@ if(localStorage.getItem('amount')){
     document.querySelector('.footer-basket__amount').innerHTML = JSON.parse(localStorage.getItem('amount'));
     };
 
+
     let amountProduct = +document.querySelector('.card-description-amount-block__number').value,
         price = +document.querySelector('.total__price').innerHTML;
         function buttonPlus(){
@@ -115,5 +116,4 @@ if(localStorage.getItem('amount')){
         
         function totalPrice(){
             price = amountProduct * 310;
-        };   
-        
+        };  
