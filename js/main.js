@@ -116,3 +116,4 @@ if(localStorage.getItem('amount')){
         function totalPrice(){
             price = amountProduct * 310;
         };   
+        

@@ -1,0 +1,89 @@
+.buy
+    margin-top: 10%
+    &-block
+        display: flex
+.form
+    display: flex
+    flex-direction: column
+    &__input
+        +semibold
+        font-size: 2.2rem
+        color: #5a5858
+        padding: 2.5rem
+        border-radius: 20px
+        margin-bottom: 2rem
+        border: 1px solid #777676
+    &__label
+        +bold
+        font-size: 2.7rem
+        margin: 4rem 0
+        &-money
+            +semibold
+            font-size: 2.2rem
+            display: flex
+            position: relative
+            &::before
+                display: block
+                content: ''
+                width: 20px
+                height: 20px
+                border: 1px solid #5017BF
+                border-radius: 100%
+                margin-right: 2rem
+            &::after
+                content: ''
+                display: block
+                width: 16px
+                height: 16px
+                position: absolute
+                top: 3px
+                left: 3px               
+                border-radius: 100%
+    &-address
+        display: flex
+        justify-content: space-between
+    &-delivery
+        display: flex
+        justify-content: space-between
+        &__text
+            flex-basis: 45%
+            padding-top: 2.5rem
+            text-align: center
+            +semibold
+            font-size: 2.2rem
+            border: 1px solid #605E5E
+            border-radius: 25px
+            position: relative
+            b
+                color: #000000
+            &:hover
+                background-color: rgba(110,37,169,0.5)
+            &::before
+                position: absolute
+                z-index: -1
+                content: ''
+                display: block
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                border-radius: 25px
+        input
+            display: none
+            &:checked + .form-delivery__text::before
+                background-color: rgba(110,37,169,0.5)
+    &-money
+        display: flex
+        justify-content: space-between 
+        margin-bottom: 5rem
+        &-card
+            flex-basis: 50%
+        input
+            display: none
+            &:checked + .form__label-money::after
+                background-color: $primary-color
+    &__button
+        max-width: 220px        
+        margin: 0 auto
+                
+            
