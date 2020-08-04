@@ -9,7 +9,7 @@
 <body>
 <header class="header">
     <div class="container">
-            <div class="navigation">
+            <nav class="navigation">
                 <a href="index.html" class="navigation__logo">
                     <img src="img/logo.svg" alt="logo">
                 </a>
@@ -39,96 +39,98 @@
                         <a href="#"><img src="img/whatsup.svg" alt="whatsUp" class="navigation-contacts-social__link"></a>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
     </div>
 </header>
-<section class="section card">
-    <div class="container">
-        <div class="card-block">
-                <div class="card-sliders">
-                    <div class="card-slider">
-                        <img src="img/card-1.png" alt="одеяло">
-                        <img src="img/card-2.png" alt="теплое одеяло">
-                        <img src="img/card-3.png" alt="красивое одеяло">
-                        <img src="img/card-4.png" alt="мягкое одеяло">
-                        <img src="img/card-5.png" alt="одеяло">
-                    </div>
-                    <div class="card-slider-down">
-                        <img src="img/card-1.png" alt="одеяло">
-                        <img src="img/card-2.png" alt="теплое одеяло">
-                        <img src="img/card-3.png" alt="красивое одеяло">
-                        <img src="img/card-4.png" alt="мягкое одеяло">
-                        <img src="img/card-5.png" alt="одеяло">
-                    </div>
-                    <div class="card-slider-arrow">
-                        <svg class="card-slider-arrow__prev" width="32" height="57" viewBox="0 0 32 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M30.6601 1L0.998525 28.5L30.6601 56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg> 
-                        <svg class="card-slider-arrow__next" width="32" height="57" viewBox="0 0 32 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.839844 1L30.5014 28.5L0.839844 56"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                                       
-                    </div>
-                </div>
-            <div class="card-description">
-                <h2 class="card-description__title">Тяжелое одеяло INN SLEEP</h2>
-                <ul class="card-description-features">
-                    <li>против бессоницы</li>
-                    <li>против стресса</li>
-                    <li>против усталости</li>
-                </ul>
-                <span class="card-description__price">310 BYN</span>
-                <span class="card-description__text">Вес :  8 кг</span>
-                <span class="card-description__text">Размер :  150x200 см   </span>
-                <span class="card-description__text">Цвет: серый</span>
-                <div class="card-description-amount">
-                    <span class="card-description__text">Количество: </span> 
-                    <div class="card-description-amount-block">
-                        <input value="1" class="card-description-amount-block__number" id="amount">
-                        <div class="card-description-amount-block-button">
-                            <div class="card-description-amount-block-button__plus" onclick="buttonPlus();" >+</div>
-                            <div class="card-description-amount-block-button__minus" onclick="buttonMinus();" >-</div>                            
+<main class="main">
+    <section class="section card">
+        <div class="container">
+            <div class="card-block">
+                    <div class="card-sliders">
+                        <div class="card-slider">
+                            <img src="img/card-1.png" alt="одеяло">
+                            <img src="img/card-2.png" alt="теплое одеяло">
+                            <img src="img/card-3.png" alt="красивое одеяло">
+                            <img src="img/card-4.png" alt="мягкое одеяло">
+                            <img src="img/card-5.png" alt="одеяло">
                         </div>
-                    </div>   
+                        <div class="card-slider-down">
+                            <img src="img/card-1.png" alt="одеяло">
+                            <img src="img/card-2.png" alt="теплое одеяло">
+                            <img src="img/card-3.png" alt="красивое одеяло">
+                            <img src="img/card-4.png" alt="мягкое одеяло">
+                            <img src="img/card-5.png" alt="одеяло">
+                        </div>
+                        <div class="card-slider-arrow">
+                            <svg class="card-slider-arrow__prev" width="32" height="57" viewBox="0 0 32 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.6601 1L0.998525 28.5L30.6601 56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                            <svg class="card-slider-arrow__next" width="32" height="57" viewBox="0 0 32 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.839844 1L30.5014 28.5L0.839844 56"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                       
+                        </div>
+                    </div>
+                <div class="card-description">
+                    <h2 class="card-description__title">Тяжелое одеяло INN SLEEP</h2>
+                    <ul class="card-description-features">
+                        <li>против бессоницы</li>
+                        <li>против стресса</li>
+                        <li>против усталости</li>
+                    </ul>
+                    <span class="card-description__price">310 BYN</span>
+                    <span class="card-description__text">Вес :  8 кг</span>
+                    <span class="card-description__text">Размер :  150x200 см   </span>
+                    <span class="card-description__text">Цвет: серый</span>
+                    <div class="card-description-amount">
+                        <span class="card-description__text">Количество: </span> 
+                        <div class="card-description-amount-block">
+                            <input value="1" class="card-description-amount-block__number" id="amount">
+                            <div class="card-description-amount-block-button">
+                                <div class="card-description-amount-block-button__plus" onclick="buttonPlus();" >+</div>
+                                <div class="card-description-amount-block-button__minus" onclick="buttonMinus();" >-</div>                            
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="card-description-total">
+                        <span class="card-description__text total">Итого: </span> 
+                        <span class="card-description__text total__price" id="total-price">310 BYN</span> 
+                    </div> 
+                    <a href="buy.html" class="button card-description__button">Оформить заказ</a>  
                 </div>
-                <div class="card-description-total">
-                    <span class="card-description__text total">Итого: </span> 
-                    <span class="card-description__text total__price" id="total-price">310 BYN</span> 
-                </div> 
-                <a href="buy.html" class="button card-description__button">Оформить заказ</a>  
             </div>
         </div>
-    </div>
-</section>
-<section class="section descriptions">
-    <div class="container">
-        <h6 class="descriptions__title">
-            В комплекте к каждому одеялу прилагается фирменная текстильная сумка для хранения
-        </h6>
-        <div class="descriptions-block">
-            <div class="descriptions-block-item">
-                <img src="img/descriptions-1.svg" alt="" class="descriptions-block-item__img">
-                <span class="descriptions-block-item__subtitle">100% НАТУРАЛЬНЫЕ МАТЕРИАЛЫ</span>
-                <span class="descriptions-block-item__text">Наше одеяло изготовлено из 100% сертифицированного премиального хлопка </span>                
-            </div>
-            <div class="descriptions-block-item">
-                <img src="img/descriptions-2.svg" alt="" class="descriptions-block-item__img">
-                <span class="descriptions-block-item__subtitle">УЛУЧШЕННАЯ ТЕРМОРЕГУЛЯЦИЯ</span>
-                <span class="descriptions-block-item__text">Мы разработали 7-ми слойную конструкцию для поддержания комфортной температуры сна в любую пору года</span>                
-            </div>
-            <div class="descriptions-block-item">
-                <img src="img/descriptions-4.svg" alt="" class="descriptions-block-item__img">
-                <span class="descriptions-block-item__subtitle">СТЕКЛЯННЫЕ ПРОТИВОАЛЛЕРГЕННЫЕ ГРАНУЛЫ</span>
-                <span class="descriptions-block-item__text">Стеклянные микрогранулы оказывают мягкое давление на Ваше тело, вызывая полное расслабление и быстрое засыпание </span>                
-            </div>
-            <div class="descriptions-block-item">
-                <img src="img/descriptions-3.svg" alt="" class="descriptions-block-item__img">
-                <span class="descriptions-block-item__subtitle">Естественная выработка гормонов сна</span>
-                <span class="descriptions-block-item__text">Тяжелое одеяло INN SLEEP стимулирует выработку мелатонина «гормона сна и молодости» и серотонина «гормона радости»</span>                
+    </section>
+    <section class="section descriptions">
+        <div class="container">
+            <h6 class="descriptions__title">
+                В комплекте к каждому одеялу прилагается фирменная текстильная сумка для хранения
+            </h6>
+            <div class="descriptions-block">
+                <div class="descriptions-block-item">
+                    <img src="img/descriptions-1.svg" alt="" class="descriptions-block-item__img">
+                    <span class="descriptions-block-item__subtitle">100% НАТУРАЛЬНЫЕ МАТЕРИАЛЫ</span>
+                    <span class="descriptions-block-item__text">Наше одеяло изготовлено из 100% сертифицированного премиального хлопка </span>                
+                </div>
+                <div class="descriptions-block-item">
+                    <img src="img/descriptions-2.svg" alt="" class="descriptions-block-item__img">
+                    <span class="descriptions-block-item__subtitle">УЛУЧШЕННАЯ ТЕРМОРЕГУЛЯЦИЯ</span>
+                    <span class="descriptions-block-item__text">Мы разработали 7-ми слойную конструкцию для поддержания комфортной температуры сна в любую пору года</span>                
+                </div>
+                <div class="descriptions-block-item">
+                    <img src="img/descriptions-4.svg" alt="" class="descriptions-block-item__img">
+                    <span class="descriptions-block-item__subtitle">СТЕКЛЯННЫЕ ПРОТИВОАЛЛЕРГЕННЫЕ ГРАНУЛЫ</span>
+                    <span class="descriptions-block-item__text">Стеклянные микрогранулы оказывают мягкое давление на Ваше тело, вызывая полное расслабление и быстрое засыпание </span>                
+                </div>
+                <div class="descriptions-block-item">
+                    <img src="img/descriptions-3.svg" alt="" class="descriptions-block-item__img">
+                    <span class="descriptions-block-item__subtitle">Естественная выработка гормонов сна</span>
+                    <span class="descriptions-block-item__text">Тяжелое одеяло INN SLEEP стимулирует выработку мелатонина «гормона сна и молодости» и серотонина «гормона радости»</span>                
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
 
 <footer class="footer">
@@ -192,6 +194,5 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/order.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>

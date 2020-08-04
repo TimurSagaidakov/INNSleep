@@ -35,4 +35,20 @@ let amountProduct = +document.querySelector('.card-description-amount-block__num
         };
         function totalPrice(){
             price = amountProduct * 310;
-        };  
+        }; 
+        $('.card-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            dots: true, 
+            fade: true,
+            asNavFor: '.card-slider-down',
+            prevArrow: $('.card-slider-arrow__prev'),
+            nextArrow: $('.card-slider-arrow__next'),
+        });
+        $('.card-slider-down').slick({
+            infinite: true,
+            slidesToShow: 4,
+            dots: true,
+            asNavFor: '.card-slider',
+            focusOnSelect: true,
+        });

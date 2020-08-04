@@ -4081,6 +4081,7 @@ q {
           justify-content: space-between;
   margin-top: 12rem;
   background: url("../img/descriptions.png") no-repeat center/cover;
+  padding-bottom: 100px;
 }
 
 .descriptions-block-item {
