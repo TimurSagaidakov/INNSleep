@@ -87,27 +87,28 @@
             &__description
                 position: absolute
                 transition: 0.5s
+                width: 200px
                 &-1
                     order: 2
-                    top: 20%
+                    top: 13%
                     left: 30%  
                     transform-origin: left
                     transform: scale(0)
                 &-2
                     order: 1
-                    top: 21%
+                    top: 13%
                     right: 30%
                     transform-origin: right
                     transform: scale(0)
                 &-3
                     order: 2
-                    top: 60%
+                    top: 53%
                     left: 30%
                     transform-origin: left
                     transform: scale(0)
                 &-4
                     order: 1
-                    top: 61%
+                    top: 53%
                     right: 30%
                     transform-origin: right
                     transform: scale(0)
@@ -129,6 +130,20 @@
                     margin-left: 50px
             &__ellipse
                 display: none
+@media ( max-width:  $sm)
+    .formulation
+        &-item
+            &__description                
+                &-1
+                    top: 18%
+                &-2
+                    top: 18%
+                &-3
+                    top: 56%
+                &-4 
+                    top: 56%
+            &__plus
+                margin-right: 25px
 @media ( max-width:  $xs)
     .formulation
         &__title
@@ -138,6 +153,15 @@
             padding-top: 7rem
         &-item
             margin-bottom: 10rem
+            &__description                
+                &-1
+                    top: 7%
+                &-2
+                    top: 7%
+                &-3
+                    top: 49%
+                &-4 
+                    top: 49%
 
 
                     
